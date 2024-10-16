@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋糕详情 - 甜蜜蛋糕商城</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <!-- 导航栏内容与index.html相同 -->
+        <a href="index.html" class="logo">
+            <img src="img/log.png" alt="甜蜜蛋糕商城">
+        </a>
+    </header>
+
+    <main class="cake-details-page container">
+        <nav class="breadcrumb">
+            <a href="index.html">首页</a> &gt; 
+            <a href="categories.html">蛋糕分类</a> &gt; 
+            <span id="cake-name">蛋糕名称</span>
+        </nav>
+
+        <div class="cake-details-content">
+            <div class="cake-images">
+                <div class="main-image">
+                    <img src="path/to/cake-main-image.jpg" alt="蛋糕主图" id="main-cake-image">
+                </div>
+                <div class="thumbnail-images">
+                    <!-- 缩略图将通过JavaScript动态添加 -->
+                </div>
+            </div>
+            <div class="cake-info">
+                <h1 id="cake-title">蛋糕名称</h1>
+                <p id="cake-description">蛋糕简短描述</p>
+                <div class="cake-rating">
+                    <span class="stars">★★★★☆</span>
+                    <span id="rating-value">4.5</span>
+                    <span id="review-count">(150条评价)</span>
+                </div>
+                <div class="cake-price">
+                    <span id="current-price">¥188</span>
+                    <span id="original-price" class="strikethrough">¥228</span>
+                </div>
+                <div class="cake-options">
+                    <h3>选择规格</h3>
+                    <div class="size-options">
+                        <button class="size-option active" data-size="6">6寸</button>
+                        <button class="size-option" data-size="8">8寸</button>
+                        <button class="size-option" data-size="10">10寸</button>
+                    </div>
+                    <div class="flavor-options">
+                        <button class="flavor-option active" data-flavor="原��">原味</button>
+                        <button class="flavor-option" data-flavor="巧克力">巧克力</button>
+                        <button class="flavor-option" data-flavor="草莓">草莓</button>
+                    </div>
+                </div>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="1">
+                    <button id="increase-quantity">+</button>
+                </div>
+                <div class="cake-actions">
+                    <button id="add-to-cart" class="btn-primary">加入购物车</button>
+                    <button id="buy-now" class="btn-secondary">立即购买</button>
+                    <button id="like-cake" class="btn-icon"><i class="far fa-heart"></i></button>
+                    <button id="share-cake" class="btn-icon"><i class="fas fa-share-alt"></i></button>
+                </div>
+                <div class="stock-info">
+                    <p id="stock-status">库存状态: 正在加载...</p>
+                    <p id="delivery-estimate">预计配送时间: 正在计算...</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="cake-details">
+            <h2>产品介绍</h2>
+            <div id="cake-details-content">
+                <!-- 蛋糕详细介绍将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <section class="cake-reviews">
+            <h2>用户评价</h2>
+            <div class="review-filter">
+                <button class="review-filter-btn active" data-rating="all">全部</button>
+                <button class="review-filter-btn" data-rating="5">5星</button>
+                <button class="review-filter-btn" data-rating="4">4星</button>
+                <button class="review-filter-btn" data-rating="3">3星</button>
+                <button class="review-filter-btn" data-rating="2">2星</button>
+                <button class="review-filter-btn" data-rating="1">1星</button>
+            </div>
+            <div id="review-list">
+                <!-- 用户评价将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <section class="recommended-cakes">
+            <h2>推荐蛋糕</h2>
+            <div class="product-grid" id="recommended-cakes-list">
+                <!-- 推荐蛋糕将通过JavaScript动态添加 -->
+            </div>
+        </section>
+
+        <section class="personalized-recommendations">
+            <h2>为您推荐</h2>
+            <div class="product-grid" id="personalized-recommendations-list">
+                <!-- 个性化推荐将通过JavaScript动态添加 -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容与index.html相同 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cake-details.js"></script>
+</body>
+</html>

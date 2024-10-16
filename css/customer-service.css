@@ -1,0 +1,169 @@
+.customer-service-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.customer-service-page h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.customer-service-options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.option {
+    flex-basis: calc(33.333% - 20px);
+    text-align: center;
+    padding: 30px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.option:hover {
+    transform: translateY(-5px);
+}
+
+.option i {
+    font-size: 48px;
+    color: #ff6b6b;
+    margin-bottom: 20px;
+}
+
+.option h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.option p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+}
+
+.leave-message {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 50px;
+}
+
+.leave-message h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.faq {
+    margin-bottom: 50px;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.faq-list details {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+}
+
+.faq-list summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.faq-list p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.social-media {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff6b6b;
+}
+
+.return-shopping {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    text-decoration: none;
+}
+
+.return-shopping:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .customer-service-options {
+        flex-direction: column;
+    }
+
+    .option {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}

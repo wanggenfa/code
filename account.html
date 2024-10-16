@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 甜蜜蛋糕商城</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="path/to/logo.png" alt="甜蜜蛋糕商城">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="categories.html">蛋糕分类</a>
+                <a href="index.html#new-products">新品推荐</a>
+                <a href="cake-customization.html">蛋糕定制</a>
+            </nav>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="搜索蛋糕...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="account.html" class="user-account">
+                    <i class="fas fa-user"></i>
+                    <span id="user-name">个人中心</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account-page">
+        <div class="container">
+            <div class="account-content">
+                <aside class="account-sidebar">
+                    <nav>
+                        <ul>
+                            <li><a href="#dashboard" class="active">账户概览</a></li>
+                            <li><a href="#orders">我的订单</a></li>
+                            <li><a href="#account-info">账户信息</a></li>
+                            <li><a href="#address-book">地址管理</a></li>
+                            <li><a href="#payment-methods">支付方式</a></li>
+                            <li><a href="#coupons-points">优惠券与积分</a></li>
+                            <li><a href="#wishlist">收藏夹</a></li>
+                            <li><a href="#notifications">消息中心</a></li>
+                            <li><a href="#reviews-feedback">评价与反馈</a></li>
+                            <li><a href="#account-security">账号安全</a></li>
+                        </ul>
+                    </nav>
+                    <button id="logout-button" class="btn-logout">退出登录</button>
+                </aside>
+
+                <div class="account-main">
+                    <section id="dashboard" class="account-section">
+                        <!-- 账户概览内容 -->
+                    </section>
+                    <section id="orders" class="account-section" style="display: none;">
+                        <!-- 订单内容 -->
+                    </section>
+                    <section id="account-info" class="account-section" style="display: none;">
+                        <!-- 账户信息内容 -->
+                    </section>
+                    <section id="address-book" class="account-section" style="display: none;">
+                        <!-- 地址管理内容 -->
+                    </section>
+                    <section id="payment-methods" class="account-section" style="display: none;">
+                        <!-- 支付方式内容 -->
+                    </section>
+                    <section id="coupons-points" class="account-section" style="display: none;">
+                        <!-- 优惠券与积分内容 -->
+                    </section>
+                    <section id="wishlist" class="account-section" style="display: none;">
+                        <!-- 收藏夹内容 -->
+                    </section>
+                    <section id="notifications" class="account-section" style="display: none;">
+                        <!-- 消息中心内容 -->
+                    </section>
+                    <section id="reviews-feedback" class="account-section" style="display: none;">
+                        <!-- 评价与反馈内容 -->
+                    </section>
+                    <section id="account-security" class="account-section" style="display: none;">
+                        <!-- 账号安全内容 -->
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/account.js"></script>
+</body>
+</html>

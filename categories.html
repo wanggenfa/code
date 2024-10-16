@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蛋糕分类 - 甜蜜蛋糕商城</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/log.png" alt="甜蜜蛋糕商城">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="categories.html">蛋糕分类</a>
+                <a href="index.html#new-products">新品推荐</a>
+                <a href="cake-customization.html">蛋糕定制</a>
+            </nav>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <div class="search-bar">
+                    <input type="text" placeholder="搜索蛋糕...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <a href="login.html" class="user-account">
+                    <i class="fas fa-user"></i>
+                    <span>登录/注册</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="category-page">
+        <div class="container">
+            <h1 class="page-title">蛋糕分类</h1>
+            
+            <div class="category-content">
+                <aside class="category-sidebar">
+                    <h3>筛选条件</h3>
+                    <div class="filter-group">
+                        <h4>口味</h4>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="flavor" value="chocolate"> <span>巧克力</span></label>
+                            <label><input type="checkbox" name="flavor" value="strawberry"> <span>草莓</span></label>
+                            <label><input type="checkbox" name="flavor" value="vanilla"> <span>香草</span></label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>场景</h4>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="occasion" value="birthday"> <span>生日</span></label>
+                            <label><input type="checkbox" name="occasion" value="wedding"> <span>婚礼</span></label>
+                            <label><input type="checkbox" name="occasion" value="party"> <span>派对</span></label>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <h4>价格区间</h4>
+                        <div class="price-range">
+                            <input type="range" id="price-range" min="0" max="500" step="50" value="250">
+                            <output for="price-range">¥0 - ¥250</output>
+                        </div>
+                    </div>
+                    <button id="apply-filters" class="btn-primary">应用筛选</button>
+                </aside>
+
+                <section class="category-main">
+                    <div class="category-header">
+                        <div class="sort-options">
+                            <label for="sort-select">排序方式：</label>
+                            <select id="sort-select">
+                                <option value="default">默认排序</option>
+                                <option value="price-asc">价格从低到高</option>
+                                <option value="price-desc">价格从高到低</option>
+                                <option value="popularity">人气排序</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="product-grid" id="product-list">
+                        <!-- 产品列表将通过JavaScript动态添加 -->
+                    </div>
+                    <div class="pagination" id="pagination">
+                        <!-- 分页按钮将通过JavaScript动态添加 -->
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <!-- 页脚内容与index.html相同 -->
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/categories.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车 - 甜蜜蛋糕商城</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="img/log.png" alt="甜蜜蛋糕商城">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html">首页</a>
+                <a href="categories.html">蛋糕分类</a>
+                <a href="cake-customization.html">蛋糕定制</a>
+            </nav>
+            <div class="nav-right">
+                <a href="cart.html" class="cart-icon active">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+                <a href="login.html" class="user-account">
+                    <i class="fas fa-user"></i>
+                    <span>登录/注册</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="container">
+            <h1>我的购物车</h1>
+            <div id="cart-content">
+                <div class="cart-header">
+                    <label>
+                        <input type="checkbox" id="select-all"> 全选
+                    </label>
+                    <span>商品信息</span>
+                    <span>单价</span>
+                    <span>数量</span>
+                    <span>小计</span>
+                    <span>操作</span>
+                </div>
+                <div class="cart-item" data-id="1">
+                    <input type="checkbox" class="item-select" checked>
+                    <div class="item-info">
+                        <img src="img/cake1.jpg" alt="草莓奶油蛋糕">
+                        <div>
+                            <h3>草莓奶油蛋糕</h3>
+                            <p>规格：8寸</p>
+                        </div>
+                    </div>
+                    <span class="item-price">¥188.00</span>
+                    <div class="quantity-control">
+                        <button class="decrease">-</button>
+                        <input type="number" value="1" min="1" max="10">
+                        <button class="increase">+</button>
+                    </div>
+                    <span class="item-subtotal">¥188.00</span>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash"></i></button>
+                        <button class="move-to-wishlist"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+                <div class="cart-item" data-id="2">
+                    <input type="checkbox" class="item-select" checked>
+                    <div class="item-info">
+                        <img src="img/cake2.jpg" alt="巧克力慕斯蛋糕">
+                        <div>
+                            <h3>巧克力慕斯蛋糕</h3>
+                            <p>规格：6寸</p>
+                        </div>
+                    </div>
+                    <span class="item-price">¥168.00</span>
+                    <div class="quantity-control">
+                        <button class="decrease">-</button>
+                        <input type="number" value="2" min="1" max="10">
+                        <button class="increase">+</button>
+                    </div>
+                    <span class="item-subtotal">¥336.00</span>
+                    <div class="item-actions">
+                        <button class="remove-item"><i class="fas fa-trash"></i></button>
+                        <button class="move-to-wishlist"><i class="fas fa-heart"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div id="cart-summary">
+                <div class="summary-item">
+                    <span>商品总数：</span>
+                    <span>3</span>
+                </div>
+                <div class="summary-item">
+                    <span>商品小计：</span>
+                    <span>¥524.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>运费：</span>
+                    <span>¥0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>优惠券：</span>
+                    <select id="coupon-select">
+                        <option value="">请选择优惠券</option>
+                        <option value="10">满500减10元</option>
+                        <option value="20">满1000减20元</option>
+                    </select>
+                </div>
+                <div class="summary-item">
+                    <span>使用积：</span>
+                    <input type="number" id="use-points" min="0" max="100" value="0">
+                    <span>（可用积分：100）</span>
+                </div>
+                <div class="summary-item total">
+                    <span>应付总额：</span>
+                    <span>¥524.00</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button id="continue-shopping" class="btn-secondary">继续购物</button>
+                <button id="proceed-to-checkout" class="btn-primary">去结算</button>
+            </div>
+            <div class="shipping-info">
+                <h3>配送信息</h3>
+                <p>预计配送时间：下单后24小时内发货</p>
+                <p>配送方式：
+                    <select id="shipping-method">
+                        <option value="standard">标准配送（免费）</option>
+                        <option value="express">加急配送（+¥20）</option>
+                    </select>
+                </p>
+            </div>
+            <div class="recommended-products">
+                <h3>推荐商品</h3>
+                <div class="product-list">
+                    <!-- 这里可以添加推荐商品 -->
+                </div>
+            </div>
+            <div class="security-info">
+                <p>本网站已加密，您的支付信息将得到安全保障</p>
+                <img src="img/ssl-badge.png" alt="SSL安全认证">
+                <img src="img/payment-partners.png" alt="支付合作伙伴">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="contact.html">联系我们</a></li>
+                        <li><a href="faq.html">常见问题</a></li>
+                    </ul>
+                </div>
+                <div class="social-media">
+                    <h3>关注我们</h3>
+                    <a href="#"><i class="fab fa-weixin"></i></a>
+                    <a href="#"><i class="fab fa-weibo"></i></a>
+                </div>
+                <div class="newsletter">
+                    <h3>订阅我们</h3>
+                    <form>
+                        <input type="email" placeholder="输入您的邮箱">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 甜蜜蛋糕商城. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
